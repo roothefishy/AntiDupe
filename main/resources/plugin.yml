@@ -1,0 +1,24 @@
+name: DupeAlerts
+version: '2.1-SNAPSHOT'
+main: roothefishy.dupeAlerts.DupeAlerts
+api-version: '1.21'
+description: Advanced anti-dupe detection with comprehensive logging, staff management GUI, and stash finder
+author: roothefishy
+
+commands:
+  dupelogs:
+    description: Open the dupe logs GUI (staff only)
+    usage: /dupelogs
+    permission: dupealerts.staff
+  stashes:
+    description: Open the dupe stash finder GUI (staff only)
+    usage: /stashes
+    permission: dupealerts.staff
+
+permissions:
+  dupealerts.staff:
+    description: Access to dupe logs GUI, stash finder, and staff features
+    default: op
+  dupealerts.alerts:
+    description: Receive real-time dupe alerts
+    default: op

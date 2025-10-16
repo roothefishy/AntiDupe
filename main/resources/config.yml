@@ -1,0 +1,34 @@
+# DupeAlerts v2.0 Configuration
+# Anti-duplication detection plugin
+
+# General Settings
+settings:
+  # Archive logs older than X days (set to 0 to disable)
+  archive-days: 30
+  
+  # Enable/disable specific detection methods
+  detection:
+    inventory-jump: true
+    book-exploit: true
+    item-frame-spam: true
+    crafting-spam: true
+    enderman-exploit: true
+
+# Detection Thresholds
+thresholds:
+  # Minimum milliseconds between inventory checks
+  inventory-check-cooldown: 100
+  
+  # Minimum milliseconds between alerts for the same player
+  alert-cooldown: 5000
+  
+  # Item frame interactions per 10 seconds to trigger alert
+  item-frame-threshold: 10
+  
+  # Crafting actions per 5 seconds to trigger alert
+  crafting-threshold: 20
+
+# Permissions
+# dupealerts.staff - Access to /dupelogs command
+# dupealerts.alerts - Receive dupe alerts
+# dupealerts.bypass - Bypass all dupe detection
